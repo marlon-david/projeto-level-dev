@@ -1,0 +1,8 @@
+pt-BR:
+  activerecord:
+    errors:
+      models:
+        topic:
+          attributes:
+            titulo:
+              blank: "Título não pode ficar em branco"
