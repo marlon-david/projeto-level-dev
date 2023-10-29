@@ -16,5 +16,6 @@ services:
       - "8080:8080"
     volumes:
       - ./client:/usr/src/client
+    command: yarn dev
 volumes:
   bundle:
