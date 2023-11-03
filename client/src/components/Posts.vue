@@ -60,6 +60,7 @@ export default defineComponent({
     <div class="item-post">
       <h3>{{ post.title }}</h3>
       <div>{{ post.body }}</div>
+      <router-link :to="'/posts/' + post.id">View post</router-link>
     </div>
   </div>
 </template>
