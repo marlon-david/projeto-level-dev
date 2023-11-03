@@ -15,4 +15,6 @@ Rails.application.routes.draw do
   patch "/topics/:id", to: "topics#update"
   put "/topics/:id", to: "topics#update"
   delete "/topics/:id", to: "topics#destroy"
+
+  get "/posts/:id/comments", to: "posts#comments"
 end

@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: %i[ show edit update destroy ]
+  before_action :set_post, only: %i[ show edit update destroy comments ]
 
   # GET /posts or /posts.json
   def index
@@ -8,6 +8,11 @@ class PostsController < ApplicationController
 
   # GET /posts/1 or /posts/1.json
   def show
+  end
+
+  def comments
+    @comments = Comment.includes(:post).where(post_id: @post.id)
+    render 'comments/index'
   end
 
   # GET /posts/new
