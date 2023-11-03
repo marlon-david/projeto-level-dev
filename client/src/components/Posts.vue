@@ -64,7 +64,7 @@ export default defineComponent({
   </div>
 </template>
 
-<style type="text/css">
+<style scoped>
 .form-post label {
   display: block;
 }
